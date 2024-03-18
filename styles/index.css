@@ -1,13 +1,50 @@
-/*main area*/
+/*
+
+
+
+main area
+
+
+
+*/
+#content_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+}
 #register_area{
     width: 500px;
     margin: 50px auto;
     padding: 50px 50px;
     background-color: #fff;
 }
-/*logo and catch phrase*/
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    #content_wrapper{
+        flex-direction: column;
+        margin: 0;
+    }
+    #register_area{
+        width: 90%;
+    }
+}
+/*
+
+
+
+logo and catch phrase
+
+
+
+*/
+
 #main_logo{
-    width: 300px;
+    width: 40%;
 }
 h1{
     font-size: 30px;
@@ -17,7 +54,26 @@ h2{
     font-size: 20px;
     margin: 10px 0;
 }
-/*sign up form*/
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    #main_logo{
+        width: 80%;
+        margin: 50px 0 0 0;
+    }
+}
+/*
+
+
+
+sign up form
+
+
+
+*/
 #signup{
     margin: 30px 0 0 0;
 }
@@ -51,7 +107,19 @@ h2{
     vertical-align: middle;
     line-height: 58px;
 }
-/*login modal*/
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*
+
+
+
+login modal
+
+
+
+*/
 #login_modal{
     width: 450px;
     padding: 0;
@@ -78,4 +146,20 @@ h3{
 }
 #login_modal .input-field label{
     padding-left: 30px;
+}
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    #login_modal{
+        width: 90%;
+    }
+    h3{
+        font-size: 30px;
+    }
+    #modal_capital{
+        width: 40px;
+    }
 }

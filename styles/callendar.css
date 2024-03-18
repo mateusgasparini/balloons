@@ -1,4 +1,12 @@
-/*General*/
+/*
+
+
+
+General
+
+
+
+*/
 main{
     margin: 20px 5%;
     padding: 1%;
@@ -8,7 +16,25 @@ main{
     justify-content: center;
     align-items: center;
 }
-/* Year */
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    main{
+        margin: 20px 1%;
+    }
+}
+/* 
+
+
+
+Year 
+
+
+
+*/
 #year_view{
     display: flex;
     justify-content: space-between;
@@ -27,7 +53,28 @@ main{
     line-height: 60px;
     margin: 0;
 }
-/*Name of the month*/
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    #year_view{
+        width: 100%;
+    }
+    #year_view h1{
+        font-size: 28px;
+    }
+}
+/*
+
+
+
+Name of the month
+
+
+
+*/
 #month_name{
     display: flex;
     justify-content: space-between;
@@ -40,25 +87,72 @@ main{
     text-transform: uppercase;
     font-size: 35px;
     text-align: center;
-    width: 500px;
+    width: 70%;
     height: 60px;
     line-height: 60px;
     margin: 0;
 }
 #month_name a{
-    width: 200px;
+    width: 15%;
     font-size: 35px;
     font-weight: normal;
+    text-align: center;
     color: #000;
     height: 60px;
     line-height: 60px;
     cursor: pointer;
 }
-/*callendar minimized area*/
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    #month_name{
+        width: 100%;
+    }
+    #month_name h1{
+        font-size: 25px;
+        height: 40px;
+        line-height: 40px;
+    }
+    #month_name a{
+        font-size: 25px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+/*
+
+
+
+callendar minimized area
+
+
+
+*/
 #callendar_wrapper{
  width: 90%;
 }
-/*week subtitle*/
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    #callendar_wrapper{
+        width: 100%;
+    }
+}
+/*
+
+
+
+week subtitle
+
+
+
+*/
 #week_subtitle_area{
     display: flex;
     background-color: #fff;
@@ -84,7 +178,25 @@ main{
 #sat{
     border-radius: 0 15px 15px 0;
 }
-/*days minimized*/
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    .week_subtitle_name{
+        font-size: 15px;
+    }
+}
+/*
+
+
+
+days minimized
+
+
+
+*/
 #days_minimized_area{
     display: flex;
     background-color: #fff;
@@ -112,7 +224,26 @@ main{
     border: 0;
     cursor:default;
 }
-/*days maximized area*/
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    .day_minimized{
+        height: 15vw;
+        font-size: 15px;
+    }
+}
+/*
+
+
+
+days maximized area
+
+
+
+*/
 #carousel_wrapper{
     width: 100%;
     padding: none;
@@ -129,6 +260,27 @@ main{
     background-color: #fff;
     border-radius: 15px;
     width: 400px;
+    /*allowing overflow inside the day maximized*/
+    overflow-y: scroll;
+}
+/*styling the scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b8b7b7; 
+    border-radius: 15px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    transition: .5s; 
 }
 #days_maximized_area h1{
     font-size: 30px;
@@ -149,4 +301,28 @@ main{
     right: 15px;
     font-size: 20px;
     cursor: pointer;
+}
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    #days_maximized_area{
+        width: 100%;
+        height: 450px;
+    }
+    #day_maximized{
+        height: 450px;
+        width: 250px;
+    }
+    #days_maximized_area h1{
+        font-size: 20px;
+    }
+    #days_maximized_area h2{
+        font-size: 30px;
+    }
+    .minimize_button{
+        font-size: 15px;
+    }
 }

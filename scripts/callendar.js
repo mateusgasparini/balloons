@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $('#carousel_wrapper').hide();
+})
+
 function next_month(){
     //getting the variables
     var month = parseInt($('#current_month').val()) + 1;

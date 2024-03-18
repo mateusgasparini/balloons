@@ -64,55 +64,58 @@ button.
     </ul>
     <!-- Page Content -->
     <main>
-        <div class="container z-depth-1 center" id="register_area">
-            <!-- logo and catch phrase-->
+        <section id="content_wrapper">
+            <!-- logo -->
             <img id="main_logo" src="assets/logos/mint_full_logo.png" alt="main logo">
 
-            <h1>feel free to plan</h1>
-            <h2>register for free</h2>
+            <div class="z-depth-1 center" id="register_area">
+                <!-- catch phrase-->
+                <h1>feel free to plan</h1>
+                <h2>register for free</h2>
 
-            <!-- Sign Up form -->
-            <form id="signup" action="backend/signup.php" method="POST">
-                <!-- email input -->
-                <div class="input-field row">
-                    <input id="new_email" name="new_email" type="email" maxlength="100">
-                    <label for="new_email">Email</label>
+                <!-- Sign Up form -->
+                <form id="signup" action="backend/signup.php" method="POST">
+                    <!-- email input -->
+                    <div class="input-field row">
+                        <input id="new_email" name="new_email" type="email" maxlength="100">
+                        <label for="new_email">Email</label>
 
-                    <p id="email_error"></p>
-                </div>
-                <!-- password input -->
-                <div class="input-field row">
-                    <input id="new_password" name="new_password" type="password" autocomplete="new-password" 
-                    maxlength="18"  minlength="6">
-                    <label for="new_password">Password</label>
+                        <p id="email_error"></p>
+                    </div>
+                    <!-- password input -->
+                    <div class="input-field row">
+                        <input id="new_password" name="new_password" type="password" autocomplete="new-password" 
+                        maxlength="18"  minlength="6">
+                        <label for="new_password">Password</label>
 
-                    <p id="password_error"></p>
-                </div>
-                <!-- requirements area -->
-                <div class="row" id="requirements_area">
-                    <p class="not_met" id="total_of_characteres">
-                        <i class="fa-solid fa-circle-xmark"></i> betwen 6 and 18 characteres</p>
-                    
-                    <p class="not_met" id="lowercase">
-                        <i class="fa-solid fa-circle-xmark"></i> at least one lowercase letter</p>
-                    
-                    <p class="not_met" id="capital">
-                        <i class="fa-solid fa-circle-xmark"></i> at least one capital letter</p>
-                    
-                    <p class="not_met" id="numbers">
-                        <i class="fa-solid fa-circle-xmark"></i> at least one number</p>
-                    
-                    <p class="not_met" id="specials">
-                        <i class="fa-solid fa-circle-xmark"></i> at least one especial character (!, @, #, -, _)</p>
-                </div>
+                        <p id="password_error"></p>
+                    </div>
+                    <!-- requirements area -->
+                    <div class="row" id="requirements_area">
+                        <p class="not_met" id="total_of_characteres">
+                            <i class="fa-solid fa-circle-xmark"></i> betwen 6 and 18 characteres</p>
+                        
+                        <p class="not_met" id="lowercase">
+                            <i class="fa-solid fa-circle-xmark"></i> at least one lowercase letter</p>
+                        
+                        <p class="not_met" id="capital">
+                            <i class="fa-solid fa-circle-xmark"></i> at least one capital letter</p>
+                        
+                        <p class="not_met" id="numbers">
+                            <i class="fa-solid fa-circle-xmark"></i> at least one number</p>
+                        
+                        <p class="not_met" id="specials">
+                            <i class="fa-solid fa-circle-xmark"></i> at least one especial character (!, @, #, -, _)</p>
+                    </div>
 
-                <div class="row">
-                    <button class="btn waves-effect waves-light" id="sign_up_button" type="submit" name="action">
-                        sign up
-                    </button>
-                </div>
-            </form> 
-        </div>
+                    <div class="row">
+                        <button class="btn waves-effect waves-light" id="sign_up_button" type="submit" name="action">
+                            sign up
+                        </button>
+                    </div>
+                </form> 
+            </div>
+        </section>
     </main>
     <!-- Modals -->
 
