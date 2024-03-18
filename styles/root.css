@@ -1,0 +1,53 @@
+/*color and font variables*/
+:root{
+    --mint: #9EFFBB;
+    --mint_darkened: #6FFF9A;
+    --beige: #D1A175;
+    --light_gray: #f0f0f0;
+    --dark_gray: #b9b9b9;
+
+    --main_font: Optima, sans-serif;
+}
+/*defining the html style*/
+html{
+    min-height: 100%;
+    background-color: var(--light_gray);
+}
+/*defining the navbar style*/
+#defined_heigth{
+    background-color: var(--mint_darkened);
+    height: 80px;
+    transition: .5s;
+}
+nav.nav-wrapper.change{
+    background-color: var(--mint);
+    opacity: .80;
+}
+.brand-logo img{
+    height: 60px;
+    margin: 10px 20px;
+}
+nav .nav-wrapper ul li a,
+.sidenav li a{
+    background-color: #fff;
+    height: 60px;
+    border-radius: 15px;
+    margin: 10px;
+    vertical-align: middle;
+    line-height: 58px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.sidenav li a{
+    background-color: var(--light_gray);
+    text-align: center;
+}
+.nav-content{
+    background-color: var(--dark_gray);
+    text-align: center;
+}
+/*setting the font family throughout the site*/
+*{
+    font-family: var(--main_font);
+}

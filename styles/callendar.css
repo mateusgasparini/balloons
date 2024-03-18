@@ -1,0 +1,152 @@
+/*General*/
+main{
+    margin: 20px 5%;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Year */
+#year_view{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    gap: 40px;
+    width: 90%;
+    border-radius: 15px 15px 0 0;
+}
+#year_view h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+}
+/*Name of the month*/
+#month_name{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    gap: 40px;
+    width: 90%;
+    border-radius: 0 0 15px 15px;
+}
+#month_name h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+}
+#month_name a{
+    width: 200px;
+    font-size: 35px;
+    font-weight: normal;
+    color: #000;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+/*callendar minimized area*/
+#callendar_wrapper{
+ width: 90%;
+}
+/*week subtitle*/
+#week_subtitle_area{
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+.week_subtitle_name{
+    width: 100%;
+    margin: 2px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--light_gray);
+}
+#sun{
+    border-radius: 15px 0 0 15px;
+}
+#sat{
+    border-radius: 0 15px 15px 0;
+}
+/*days minimized*/
+#days_minimized_area{
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin: 0 0 50px 0;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+.day_minimized{
+    width: 13.28%;
+    border: 1px solid rgb(193, 190, 190);
+    margin: 0.50%;
+    height: 9vw;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 15px;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.day_minimized.filler{
+    border: 0;
+    cursor:default;
+}
+/*days maximized area*/
+#carousel_wrapper{
+    width: 100%;
+    padding: none;
+    display: flex;
+    justify-content: center;
+}
+#days_maximized_area{
+    width: 90%;
+    height: 600px;
+    margin: 20px 0;
+}
+#day_maximized{
+    height: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 400px;
+}
+#days_maximized_area h1{
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 10px 0;
+    padding: 0;
+}
+#days_maximized_area h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0;
+}
+.minimize_button{
+    color: #000;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
