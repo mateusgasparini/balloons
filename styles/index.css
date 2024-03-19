@@ -21,7 +21,13 @@ main area
 }
 /*Ipads, Tablets*/
 @media(max-width:768px) {
-
+    #content_wrapper{
+        flex-direction: column;
+        margin: 0;
+    }
+    #register_area{
+        width: 70%;
+    }
 }
 /*mobile devices*/
 @media(max-width:480px) {
@@ -56,7 +62,10 @@ h2{
 }
 /*Ipads, Tablets*/
 @media(max-width:768px) {
-
+    #main_logo{
+        width: 50%;
+        margin: 50px 0 0 0;
+    }
 }
 /*mobile devices*/
 @media(max-width:480px) {

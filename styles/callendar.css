@@ -2,7 +2,7 @@
 
 
 
-General
+main
 
 
 
@@ -35,13 +35,18 @@ Year
 
 
 */
+#month_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 90%;
+    border-radius: 15px;
+}
 #year_view{
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
-    gap: 40px;
-    width: 90%;
-    border-radius: 15px 15px 0 0;
+    width: 100%;
 }
 #year_view h1{
     text-transform: uppercase;
@@ -75,15 +80,14 @@ Name of the month
 
 
 */
-#month_name{
+#month_view{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    background-color: #fff;
     gap: 40px;
-    width: 90%;
-    border-radius: 0 0 15px 15px;
+    width: 100%;
 }
-#month_name h1{
+#month_view h1{
     text-transform: uppercase;
     font-size: 35px;
     text-align: center;
@@ -92,7 +96,7 @@ Name of the month
     line-height: 60px;
     margin: 0;
 }
-#month_name a{
+#month_view a{
     width: 15%;
     font-size: 35px;
     font-weight: normal;
@@ -111,12 +115,12 @@ Name of the month
     #month_name{
         width: 100%;
     }
-    #month_name h1{
+    #month_view h1{
         font-size: 25px;
         height: 40px;
         line-height: 40px;
     }
-    #month_name a{
+    #month_view a{
         font-size: 25px;
         height: 40px;
         line-height: 40px;
@@ -132,7 +136,9 @@ callendar minimized area
 
 */
 #callendar_wrapper{
- width: 90%;
+    width: 90%;
+    margin: 15px 0;
+    border-radius: 15px;
 }
 /*Ipads, Tablets*/
 @media(max-width:768px) {
@@ -158,8 +164,7 @@ week subtitle
     background-color: #fff;
     padding: 10px;
     width: 100%;
-    margin: 10px 0;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     justify-content: space-between;
 }
 .week_subtitle_name{
@@ -202,8 +207,8 @@ days minimized
     background-color: #fff;
     padding: 10px;
     width: 100%;
-    margin: 0 0 50px 0;
-    border-radius: 15px;
+    margin: 0;
+    border-radius: 0 0 15px 15px;
     flex-wrap: wrap;
 }
 .day_minimized{

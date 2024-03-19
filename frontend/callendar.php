@@ -36,7 +36,7 @@ this is the main page after login, it's a callendar with the days of the month d
             <a href="#" class="brand-logo"><img src="../assets/logos/white_capital.png" alt="navbar logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="../backend/logout.php">exit</a></li>
+                <li><a href="../backend/logout.php">log out</a></li>
             </ul>
         </div>
         <div class="nav-content">
@@ -51,53 +51,56 @@ this is the main page after login, it's a callendar with the days of the month d
     </ul>
     <!-- Page Content -->
     <main>
-        <!-- Year View -->
-        <div id="year_view">
-            <?php 
-                echo "<h1>" . date("Y") . "</h1>";
-                echo "<input type='hidden' id='current_year' value='" . date("Y") . "'>";
-            ?>
-        </div>
-        <!-- Month View -->
-        <div id="month_name">
-            <a onclick="previous_month()"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <section id="month_h1">
+        <!-- Year and Month View -->
+        <div id="month_name" class="z-depth-1">
+            <!-- Year View -->
+            <section id="year_view">
                 <?php 
-            
-                    $month = date("m");
-                    echo "<input type='hidden' id='current_month' value='$month'>";
-                    if($month == 1){
-                        echo "<h1>january</h1>";
-                    }else if($month == 2){
-                        echo "<h1>february</h1>";
-                    }else if($month == 3){
-                        echo "<h1>march</h1>";
-                    }else if($month == 4){
-                        echo "<h1>april</h1>";
-                    }else if($month == 5){
-                        echo "<h1>may</h1>";
-                    }else if($month == 6){
-                        echo "<h1>july</h1>";
-                    }else if($month == 7){
-                        echo "<h1>june</h1>";
-                    }else if($month == 8){
-                        echo "<h1>august</h1>";
-                    }else if($month == 9){
-                        echo "<h1>september</h1>";
-                    }else if($month == 10){
-                        echo "<h1>october</h1>";
-                    }else if($month == 11){
-                        echo "<h1>november</h1>";
-                    }else if($month == 12){
-                        echo "<h1>december</h1>";
-                    }
-            
+                    echo "<h1>" . date("Y") . "</h1>";
+                    echo "<input type='hidden' id='current_year' value='" . date("Y") . "'>";
                 ?>
             </section>
-            <a onclick="next_month()"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <!-- Month View -->
+            <section id="month_view">
+                <a onclick="previous_month()"><i class="fa-solid fa-arrow-left-long"></i></a>
+                <section id="month_h1">
+                    <?php 
+                
+                        $month = date("m");
+                        echo "<input type='hidden' id='current_month' value='$month'>";
+                        if($month == 1){
+                            echo "<h1>january</h1>";
+                        }else if($month == 2){
+                            echo "<h1>february</h1>";
+                        }else if($month == 3){
+                            echo "<h1>march</h1>";
+                        }else if($month == 4){
+                            echo "<h1>april</h1>";
+                        }else if($month == 5){
+                            echo "<h1>may</h1>";
+                        }else if($month == 6){
+                            echo "<h1>july</h1>";
+                        }else if($month == 7){
+                            echo "<h1>june</h1>";
+                        }else if($month == 8){
+                            echo "<h1>august</h1>";
+                        }else if($month == 9){
+                            echo "<h1>september</h1>";
+                        }else if($month == 10){
+                            echo "<h1>october</h1>";
+                        }else if($month == 11){
+                            echo "<h1>november</h1>";
+                        }else if($month == 12){
+                            echo "<h1>december</h1>";
+                        }
+                
+                    ?>
+                </section>
+                <a onclick="next_month()"><i class="fa-solid fa-arrow-right-long"></i></a>
+            </section>
         </div>
         <!-- Minimized callendar area -->
-        <section id="callendar_wrapper">
+        <section id="callendar_wrapper"  class="z-depth-1">
             <!-- Week Subtitle -->
             <div id="week_subtitle_area">
                 <div class="week_subtitle_name" id="sun">Sun</div>

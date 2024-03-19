@@ -47,6 +47,19 @@ nav .nav-wrapper ul li a,
     background-color: var(--dark_gray);
     text-align: center;
 }
+.tabs.tabs-transparent .tab a{
+    color: #000;
+    font-size: 15px;
+    font-weight: normal;
+}
+.tabs.tabs-transparent .tab a.active{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.tabs.tabs-transparent .tab a:hover{
+    color: #000;
+}
 /*setting the font family throughout the site*/
 *{
     font-family: var(--main_font);
