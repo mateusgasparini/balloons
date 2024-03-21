@@ -30,6 +30,33 @@ main{
 
 
 
+styling the scrollbar
+
+
+
+*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b8b7b7; 
+    border-radius: 15px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    transition: .5s; 
+}
+/*
+
+
+
 main action area
 
 
@@ -151,8 +178,8 @@ modals style
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    background-color: red;
     margin: 5px;
+    color: red;
 }
 /*Ipads, Tablets*/
 @media(max-width:768px) {
@@ -189,9 +216,17 @@ active event
     flex-wrap: wrap;
     gap: 5%;
 }
+.active_event_section{
+    width: fit-content;
+    padding: 0;
+    margin: 0 0 30px 0;
+    width: 30%;
+    height: 600px;
+    position: relative;
+}
 .active_event{
     position: relative;
-    width: 30%;
+    width: 100%;
     height: 600px;
     background-color: #fff;
     border-radius: 15px;
@@ -202,6 +237,7 @@ active event
     position: absolute;
     width: 35px;
     height: 35px;
+    padding: 1px;
     top: 5px;
     right: 5px;
     background-color: #fff;
@@ -237,7 +273,8 @@ active event
 }
 /*date input*/
 .active_event input[type=date]:not(.browser-default){
-    margin: 10px 0;
+    margin: 0;
+    padding: 0;
     border: none;
     width: 90%;
     font-size: 25px;
@@ -248,55 +285,132 @@ active event
 
 
 
-add-ons area trigger
+active addons area
 
 
 
 */
-.add_ons_trigger{
-    position: absolute;
-    width: 100%;
-    top: -10px;
-    left: 0;
-    height: 10px;
+.active_addons_area{
+    height: 400px;
+    margin: 0;
+    overflow-y: scroll;
+}
+.addon_section{
+    margin: 10px;
+    position: relative;
+    padding: 0;
+    border: 1px solid var(--dark_gray);
+}
+.addon_title{
+    margin: 0;
+    padding: 5px 10px;
+    opacity: 0.8;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.addon_title.dark{
+    color: #fff;
+}
+.delete_addon_button{
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    background-color: #fff;
+    font-weight: bolder;
     border: 0;
-    transition: .3s;
-}
-.add_ons_trigger i{
-    opacity: 1;
+    border-radius: 100%;
+    color: rgb(214, 94, 94);
     position: absolute;
-    background-color: transparent;
-    bottom: 8px;
-    left: 0;
-    width: 100%;
+    top: -3px;
+    left: -3px;
     cursor: pointer;
-    font-size: 20px;
-    transition: .3s;
+    z-index: 2;
 }
-.add_ons_trigger i:hover{
-    bottom: 10px;
+/*
+time 
+*/
+.active_event input[type=time]:not(.browser-default){
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 90%;
     font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+/*
+description and location textarea
+*/
+.event_location,
+.event_description{
+    padding: 5px;
+    margin: 0;
+    font-size: 18px;
+    min-height: 80px;
+    border: 0;
+    outline: 0;
+}
+/*
+transport
+*/
+.transport_area{
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+}
+input.select-dropdown,
+.dropdown-content li > a, 
+.dropdown-content li > span,
+.select-wrapper input.select-dropdown,
+.select-wrapper input.select-dropdown:focus  {
+    font-family: 'FontAwesome', 'Second Font name';
+    font-size: 25px;
+    border-bottom: 0;
+    width: 50px;
 }
 /*
 
 
 
-add-ons area
+inactive add-ons area
 
 
 
 */
-.add_ons_area{
+.inactive_addons_area{
     position: absolute;
-    bottom: -40px;
-    display: flex;
-    justify-content: space-between;
+    bottom: 0;
     width: 100%;
-    height: 40px;
-    padding: 0 10px 5px 10px;
+    min-height: 5px;
+    max-height: 40px;
+    padding: 5px 0;
     opacity: 0.8;
 }
-.add_ons_area .add_on_button{
+.addons_buttons_area{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    gap: 10px;
+    display: none;
+}
+.addons_trigger{
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    border: 0;
+    transition: .3s;
+    opacity: 1;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+.addons_trigger:hover{
+    top: -25px;
+    font-size: 25px;
+}
+.addon_button{
     border-radius: 100%;
     background-color: transparent;
     font-size: 20px;
@@ -305,6 +419,81 @@ add-ons area
     opacity: 0.9;
     color: #000;
 }
-.add_ons_area.dark .add_on_button{
+.inactive_addons_area.dark .addon_button{
     color: #fff;
+}
+/*
+
+
+
+guest list
+
+
+
+*/
+.guests_button{
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    border: 0;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+}
+.guest_list{
+    background-color: #fff;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: -100%;
+    z-index: 3;
+}
+.delete_guest_list_button{
+    color: rgb(167, 1, 1);
+    background-color: #fff;
+    border: 0;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 2;
+    cursor: pointer;
+}
+.delete_guest_list_button:active{
+    background-color: #fff;
+}
+h4{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    opacity: .8;
+    margin: 0;
+    padding: 15px;
+    border-radius: 15px;
+}
+h4.light{
+    color: #000;
+}
+h4.dark{
+    color: #fff;
+}
+.guests{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 20px;
+}
+.guests:focus{
+    outline: 0;
 }
