@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    if(isset($_SESSION["IDu"])){
+        header("Location:frontend/callendar.php");
+        //Redirecting the user in case it's already log in
+    }
+?>
 <!-- 
 
 WELCOME to Ballons!
@@ -8,15 +15,7 @@ the login and the register page, to login just press the button on the navbar
 and a modal will appear, and to register simply fill your data and press the 
 button.
 
---><!--  -->
-
-<!-- Redirecting the user in case it's already log in -->
-<?php 
-    session_start();
-    if(isset($_SESSION["IDu"])){
-        header("Location:frontend/callendar.php");
-    }
-?>
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

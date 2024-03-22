@@ -1,4 +1,5 @@
-<?php 
+<?php
+    session_start();
 //when submiting the form to add a new user
     if(isset($_POST["signup"])){
         $password = hash("sha3-224",$_POST['password']);
@@ -12,7 +13,6 @@
         if ($connection->query($sql) === TRUE) {
             $IDu = $connection->insert_id;
             
-            session_start();
             $_SESSION["IDu"] = $IDu;
 
             echo "success";

@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     include_once "connection.php";
     $connection = connect();
 
@@ -11,7 +12,6 @@
         $user = mysqli_fetch_assoc($query);
         $IDu = $user["IDu"];
         
-        session_start();
         $_SESSION["IDu"] = $IDu;
         echo "success";
     }else{

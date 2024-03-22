@@ -1,9 +1,8 @@
 <?php 
-
+session_start();
 if(isset($_POST["change_days_minimized"])){
     include_once "../backend/connection.php";
     $connection = connect();
-    session_start();
     $IDu = $_SESSION["IDu"];
     //getting the next month and current year
     $month = $_POST["month"];
@@ -71,7 +70,6 @@ if(isset($_POST["change_days_minimized"])){
 }else if(isset($_POST["change_days_maximized"])){
     include_once "../backend/connection.php";
     $connection = connect();
-    session_start();
     $IDu = $_SESSION["IDu"];
     //getting the month and year
     $month = $_POST["month"];

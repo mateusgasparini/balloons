@@ -1,20 +1,18 @@
-<!-- 
-
-this is the only holidays page, here the user will se only his planned holidays, to make it easier to access.
-In this page, the user will be able to create and alter holidays planning
-
---><!--  -->
-
-<!-- Redirecting the user in case it's not logged -->
 <?php 
     session_start();
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
     }else{
         header("Location:../index.php");
+        //Redirecting the user in case it's not logged
     }
 ?>
+<!-- 
 
+this is the only holidays page, here the user will se only his planned holidays, to make it easier to access.
+In this page, the user will be able to create and alter holidays planning
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

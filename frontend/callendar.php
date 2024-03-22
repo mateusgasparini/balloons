@@ -1,17 +1,15 @@
-<!-- 
-this is the main page after login, it's a callendar with the days of the month displayed, here you can zoom in and zoom out, add and edit holidays, add and edit notifications.
---><!--  -->
-
-<!-- Redirecting the user in case it's not logged -->
 <?php 
     session_start();
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
     }else{
         header("Location:../index.php");
+        //Redirecting the user in case it's not logged
     }
 ?>
-
+<!-- 
+this is the main page after login, it's a callendar with the days of the month displayed, here you can zoom in and zoom out, add and edit holidays, add and edit notifications.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -208,7 +208,7 @@ $(function() {
                         if(error == false){
                             var formData = {
                                 'email': $("#new_email").val(),
-                                'password': $("#new_email").val(),
+                                'password': $("#new_password").val(),
                                 'signup': true
                             };
                             console.log(formData);

@@ -1,11 +1,11 @@
 <?php 
+session_start();
 /* ------------------EVENT CRUD------------------- */
 //adding a new event
 if(isset($_POST["new_event"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -68,7 +68,6 @@ else if(isset($_POST["change_event_name"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -108,7 +107,6 @@ else if(isset($_POST["change_event_color"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -150,7 +148,6 @@ else if(isset($_POST["change_event_date"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -192,7 +189,6 @@ else if(isset($_POST["delete_event"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -228,7 +224,6 @@ else if(isset($_POST["addon"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -295,7 +290,6 @@ else if(isset($_POST["change_guests"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -333,7 +327,6 @@ else if(isset($_POST["delete_guests"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -368,7 +361,6 @@ else if(isset($_POST["change_event_time"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -410,7 +402,6 @@ else if(isset($_POST["delete_time"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -445,7 +436,6 @@ else if(isset($_POST["change_event_location"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -482,7 +472,6 @@ else if(isset($_POST["delete_location"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -517,7 +506,6 @@ else if(isset($_POST["change_event_description"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -554,7 +542,6 @@ else if(isset($_POST["delete_description"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -589,7 +576,6 @@ else if(isset($_POST["change_transport_vehicle"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -631,7 +617,6 @@ else if(isset($_POST["change_transport_time"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];
@@ -673,7 +658,6 @@ else if(isset($_POST["delete_transport"])){
     include_once "../backend/connection.php";
     $connection = connect();
     //getting the user ID
-    session_start();
     $error = false;
     if(isset($_SESSION["IDu"])){
         $IDu = $_SESSION["IDu"];

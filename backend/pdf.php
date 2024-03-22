@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$IDu = $_SESSION["IDu"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +21,12 @@
     ?>
 </head>
 
-<body>
+<body id="content"> 
     <!-- Page Content -->
     <main>
         <?php
             include_once "../backend/connection.php";
             $connection = connect();
-            session_start();
-            $IDu = $_SESSION["IDu"];
             //getting the IDe
             $IDe = $_GET["IDe"];
             //getting the event
@@ -173,15 +175,25 @@
                 ";
             }
 
+            //preparing the script
+            echo "
+                <script>
+                    function exportHTMLtoPDF() {
+                        let htmlElement = document.getElementById('content');
+                
+                        html2pdf().from(htmlElement).save('event.pdf');
+                    }
+                </script>
+            ";
+
             echo "</section></section></div>";
         ?>
     </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-    window.onload = function() {
-        print();
-        close();
-    };
+    window.onload = function() {exportHTMLtoPDF();};
+    
 </script>
 
 </html>
