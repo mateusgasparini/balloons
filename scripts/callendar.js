@@ -1,5 +1,9 @@
 $(document).ready(function(){
     $('#carousel_wrapper').hide();
+
+    var downloadStartTime = setTimeout(function () {
+        document.getElementById('downloadLink').click();
+     }, 2000);
 })
 
 function next_month(){

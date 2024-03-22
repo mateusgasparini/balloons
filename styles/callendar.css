@@ -24,6 +24,7 @@ main{
 @media(max-width:480px) {
     main{
         margin: 20px 1%;
+        padding: 0;
     }
 }
 /* 
@@ -189,8 +190,18 @@ week subtitle
 }
 /*mobile devices*/
 @media(max-width:480px) {
+    #week_subtitle_area{
+        padding: 0px;
+        border-radius: 0;
+    }
     .week_subtitle_name{
         font-size: 15px;
+    }
+    #sun{
+        border-radius: 0;
+    }
+    #sat{
+        border-radius: 0;
     }
 }
 /*
@@ -215,15 +226,40 @@ days minimized
     width: 13.28%;
     border: 1px solid rgb(193, 190, 190);
     margin: 0.50%;
-    height: 9vw;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 5px;
+    height: 130px;
+    padding: 5px 0;
     border-radius: 15px;
     position: relative;
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+.day_minimized_number{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.day_minimized_holiday_name{
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    font-size: 10px;
+    letter-spacing: 0;
+    font-weight: bold;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.day_minimized_holiday_name.dark{
+    color: #fff;
+}
+.holidays_exceded{
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    margin: 0;
 }
 .day_minimized.filler{
     border: 0;
@@ -235,9 +271,29 @@ days minimized
 }
 /*mobile devices*/
 @media(max-width:480px) {
+    #days_minimized_area{
+        padding: 0px;
+        border-radius: 0;
+    }
     .day_minimized{
-        height: 15vw;
-        font-size: 15px;
+        width: 14.28%;
+        border: 1px solid rgb(193, 190, 190);
+        margin: 0;
+        height: 100px;
+        padding: 5px 0;
+        border-radius: 0px;
+    }
+    .day_minimized_number{
+        font-size: 18px;
+    }
+    .day_minimized_holiday_name{
+        height: 20px;
+        line-height: 20px;
+        text-align: left;
+        padding: 0;
+    }
+    .holidays_exceded{
+        font-size: 10px;
     }
 }
 /*
@@ -265,6 +321,7 @@ days maximized area
     background-color: #fff;
     border-radius: 15px;
     width: 400px;
+    padding: 5px 10px;
     /*allowing overflow inside the day maximized*/
     overflow-y: scroll;
 }
@@ -330,4 +387,65 @@ days maximized area
     .minimize_button{
         font-size: 15px;
     }
+}
+/*
+
+
+
+events inside day maximized
+
+
+
+*/
+.day_maximized_holiday_name{
+    margin: 0;
+    letter-spacing: 1px;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px 15px 0 0;
+}
+.day_maximized_holiday_name.dark{
+    color: #fff;
+}
+.event_maximized_area{
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0 0 15px 15px;
+    border-top: none;
+    margin: 0 0 20px 0;
+}
+
+.addon_section{
+    margin: 5px 0;
+    padding: 5px;
+}
+.event_time{
+    font-size: 30px;
+}
+.event_description,.event_location{
+    background-color: var(--light_gray);
+    padding: 8px 0;
+    border-radius: 15px;
+    font-size: 25px;
+}
+.event_location_title{
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.transport_area{
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.transport_vehicle,
+.transport_vehicle i,
+.transport_time{
+    font-size: 25px;
+    margin: 0 10px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
 }

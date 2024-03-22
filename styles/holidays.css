@@ -17,13 +17,13 @@ main{
 /*Ipads, Tablets*/
 @media(max-width:768px) {
     main{
-        margin: 50px 0;
+        padding: 5% 5%;
     }
 }
 /*mobile devices*/
 @media(max-width:480px) {
     main{
-        margin: 70px 0;
+        padding: 5% 5%;
     }
 }
 /*
@@ -64,9 +64,6 @@ main action area
 */
 #main_action_area{
     width: 80%;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
 }
 .main_action_button{
     background-color: #fff;
@@ -89,7 +86,6 @@ main action area
 @media(max-width:768px) {
     #main_action_area{
         width: 100%;
-        gap: 15px;
     }
     .main_action_button:hover{
         font-size: 25px;
@@ -99,7 +95,6 @@ main action area
 @media(max-width:480px) {
     #main_action_area{
         width: 100%;
-        gap: 10px;
     }
     .main_action_button{
         font-size: 20px;
@@ -187,7 +182,7 @@ modals style
 }
 /*mobile devices*/
 @media(max-width:480px) {
-    #new_planning_modal{
+    .modal{
         width: 90%;
     }
     h3{
@@ -217,7 +212,6 @@ active event
     gap: 5%;
 }
 .active_event_section{
-    width: fit-content;
     padding: 0;
     margin: 0 0 30px 0;
     width: 30%;
@@ -280,6 +274,28 @@ active event
     font-size: 25px;
     letter-spacing: 2px;
     text-align: center;
+}
+/*Ipads, Tablets*/
+@media(max-width:768px) {
+    #active_events_area{
+        flex-direction: row; 
+    }
+    .active_event_section{
+        width: 45%;
+    }
+}
+/*mobile devices*/
+@media(max-width:480px) {
+    #active_events_area{
+        flex-direction: column; 
+    }
+    .active_event_section{
+        width: 100%;
+    }
+    /*name input*/
+    .active_event .event_name_section textarea{
+        font-size: 30px;
+    }
 }
 /*
 

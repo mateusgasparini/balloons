@@ -1,0 +1,86 @@
+*{
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+}
+html{
+    background-color: #fff;
+}
+body{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+main{
+    width: 80%;
+}
+h1{
+    padding: 20px;
+    margin: 50px 0 0 0;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 15px 15px 0 0;
+    font-size: 40px;
+}
+h1.dark,
+h3.dark{
+    color: #fff;
+}
+.event_addons{
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+.date_section{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 50px;
+}
+h3{
+    padding: 10px 40px;
+    margin: 0;
+    border-radius: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 40px;
+    opacity: 0.7;
+}
+h2{
+    background-color: rgb(212, 210, 210);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 15px;
+    margin: 0 0 10px 0;
+}
+.addons_section{
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+}
+.guests_section{
+    width: 40%;
+    padding: 5px;
+}
+.guests_section h2{
+    font-size: 25px;
+    margin: 0;
+    background-color: rgb(212, 210, 210);
+    text-wrap: wrap;
+}
+.guests_section .guests_title{
+    background-color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.other_addons_section{
+    padding: 0 10px;
+    width: 60%;
+}
+.time_transport{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}

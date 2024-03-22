@@ -69,8 +69,7 @@ In this page, the user will be able to create and alter holidays planning
                 //getting todays
                 $today = date("Y-m-d");
 
-                $sql_active_events = "SELECT * FROM event WHERE (`IDu` = '$IDu') AND (`date` >= '$today')"
-                . "AND (`situation` = '1') ORDER BY date";
+                $sql_active_events = "SELECT * FROM event WHERE (`IDu` = '$IDu') AND (`situation` = '1') ORDER BY date";
                 $query_active_events = mysqli_query($connection,$sql_active_events);
                 while($event = mysqli_fetch_assoc($query_active_events)){
                     $IDe = $event["IDe"];
@@ -311,7 +310,7 @@ In this page, the user will be able to create and alter holidays planning
                                             ";
                                         }
                                         echo "
-                                        <button class='addon_button modal-trigger' href='#download_pdf_$IDe'><i class='fa-solid fa-file-pdf'></i></button>
+                                        <a class='addon_button' href='../backend/pdf.php?IDe=$IDe' target='_blank'><i class='fa-solid fa-file-pdf'></i></a>
 
                                         <button class='addon_button modal-trigger' href='#delete_event_$IDe'><i class='fa-solid fa-trash'></i></button>
                                     </section>
