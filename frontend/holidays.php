@@ -365,44 +365,50 @@ In this page, the user will be able to create and alter holidays planning
             ?>
         </section>
     </main>
-    <!-- Modals -->
 
-        <!-- new planning modal -->
-        <div id="new_planning_modal" class="modal">
-            <div class="modal-content">
-                <img class="modal_capital" src="../assets/logos/white_capital.png" alt="">
-                <h3>new planning</h3>
+        <!-- Footer -->
+    <footer>
+        <p>developed by <a href="https://www.linkedin.com/in/mateus-beltrame-gasparini-a522392b4/" target="_blank">Mateus Gasparini</a> @2024</p>
+    </footer>
 
-                <!-- new planning form -->
-                <form id="new_planning">
-                    <!-- event name -->
-                    <div class="input-field row">
-                        <input id="new_event_name" name="new_event_name" type="text" maxlength="100">
-                        <label for="new_event_name">Event Name</label>
-                    </div>
-                    <!-- event date and color-->
-                    <section class="row">
-                        <div class="input-field col s9">
-                            <input id="new_event_date" name="new_event_date" type="date">
-                            <label for="new_event_date">Date</label>
-                        </div>
-                        <div class="input-field col s3">
-                            <input id="new_event_color" class="new_event_color z-depth-1" name="new_event_color" type="color" value="#9EFFBB">
-                        </div>
-                    </section>
-                    <!-- error message -->
-                    <div class="row">
-                        <p id="new_planning_error"></p>
-                    </div>
+    <!-- modals -->
 
-                    <div class="row center">
-                        <button class="btn waves-effect waves-light" id="sign_up_button" type="submit" name="action">
-                            add
-                        </button>
+    <!-- new planning modal -->
+    <div id="new_planning_modal" class="modal">
+        <div class="modal-content">
+            <img class="modal_capital" src="../assets/logos/white_capital.png" alt="">
+            <h3>new planning</h3>
+
+            <!-- new planning form -->
+            <form id="new_planning">
+                <!-- event name -->
+                <div class="input-field row">
+                    <input id="new_event_name" name="new_event_name" type="text" maxlength="100">
+                    <label for="new_event_name">Event Name</label>
+                </div>
+                <!-- event date and color-->
+                <section class="row">
+                    <div class="input-field col s9">
+                        <input id="new_event_date" name="new_event_date" type="date">
+                        <label for="new_event_date">Date</label>
                     </div>
-                </form>
-            </div>
+                    <div class="input-field col s3">
+                        <input id="new_event_color" class="new_event_color z-depth-1" name="new_event_color" type="color" value="#9EFFBB">
+                    </div>
+                </section>
+                <!-- error message -->
+                <div class="row">
+                    <p id="new_planning_error"></p>
+                </div>
+
+                <div class="row center">
+                    <button class="btn waves-effect waves-light" id="sign_up_button" type="submit" name="action">
+                        add
+                    </button>
+                </div>
+            </form>
         </div>
+    </div>
 </body>
 
 <!-- getting the scripts links -->

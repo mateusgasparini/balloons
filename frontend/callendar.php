@@ -324,8 +324,13 @@ this is the main page after login, it's a callendar with the days of the month d
                 ?>
             </div>
         </section>
+        
     </main>
-    <!-- Modals -->
+
+    <!-- footer -->
+    <footer>
+            <p>developed by <a href="https://www.linkedin.com/in/mateus-beltrame-gasparini-a522392b4/" target="_blank">Mateus Gasparini</a> @2024</p>
+        </footer>
 </body>
 
 <!-- getting the scripts links -->

@@ -115,6 +115,7 @@ button.
                 </form> 
             </div>
         </section>
+
     </main>
     <!-- Modals -->
 
@@ -149,8 +150,12 @@ button.
                 </form>
             </div>
         </div>
-    </body>
 
+</body>
+
+<footer>
+    <p>developed by <a href="https://www.linkedin.com/in/mateus-beltrame-gasparini-a522392b4/" target="_blank">Mateus Gasparini</a> @2024</p>
+</footer>
 <!-- Getting the scripts links -->
 <?php 
 

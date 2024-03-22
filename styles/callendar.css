@@ -8,7 +8,7 @@ main
 
 */
 main{
-    margin: 20px 5%;
+    margin: 0;
     padding: 1%;
     text-align: center;
     display: flex;
@@ -23,7 +23,6 @@ main{
 /*mobile devices*/
 @media(max-width:480px) {
     main{
-        margin: 20px 1%;
         padding: 0;
     }
 }
@@ -138,7 +137,7 @@ callendar minimized area
 */
 #callendar_wrapper{
     width: 90%;
-    margin: 15px 0;
+    margin: 15px 0 60px 0;
     border-radius: 15px;
 }
 /*Ipads, Tablets*/
@@ -310,6 +309,7 @@ days maximized area
     padding: none;
     display: flex;
     justify-content: center;
+    margin: 15px 0 60px 0;
 }
 #days_maximized_area{
     width: 90%;
