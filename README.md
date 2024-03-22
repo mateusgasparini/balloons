@@ -30,6 +30,8 @@ Sumary
 * [Tecnologies](#tecnologies)
 
 * [Project Status](#project_status)
+
+* [Autor](#autor)
 <!--te-->
 
 <h1 align='center' id='walkthrough'>Walkthrough</h1>
@@ -152,10 +154,7 @@ Sumary
 <a href="https://www.linkedin.com/in/mateus-beltrame-gasparini-a522392b4/">
  <img style="border-radius: 50%;" src="assets/previews/IMG_20230611_104314_2.jpg" width="100px;" alt=""/>
  <br />
- <sub><b>Mateus Gasparini</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat">🚀</a>
-
-[![Instagram Badge](https://img.shields.io/badge/-@mateusbelgas-962fbf?style=flat-square&labelColor=962fbf&logo=instagram&logoColor=white&link=//instagram.com/mateusbelgas)](//instagram.com/mateusbelgas) [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/) 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:tgmarinho@gmail.com)
+ <sub><b>Mateus Gasparini</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat"></a>
 
 
 <h4 align="center" id='project_status'> 
